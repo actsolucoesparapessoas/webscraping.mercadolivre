@@ -2,7 +2,6 @@ streamlit==1.34.0
 beautifulsoup4
 requests
 pandas
-webbrowser
 time
 datetime
 pytz
