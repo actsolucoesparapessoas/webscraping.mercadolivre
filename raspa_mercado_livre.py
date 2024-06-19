@@ -174,8 +174,8 @@ info = 'O web scraping (raspagem na internet), também conhecido como extração
 sidebar_MKD(info, alinhamento = "centralizado", tamanho_fonte = 18, cor_fonte = "yellow")
 #st.title('Web Scraping no Mercado Livre')
 #st.subheader('Desenvolvido por: Massaki Igarashi')
-MKD('Web Scraping no Mercado Livre', alinhamento = "centralizado", tamanho_fonte = 34, cor_fonte = "yelow")
-MKD('Desenvolvido por: Massaki Igarashi', alinhamento = "centralizado", tamanho_fonte = 28, cor_fonte = "yelow")
+MKD('Web Scraping no Mercado Livre', alinhamento = "centralizado", tamanho_fonte = 38, cor_fonte = "yelow")
+MKD('Desenvolvido por: Massaki Igarashi', alinhamento = "centralizado", tamanho_fonte = 26, cor_fonte = "yelow")
 
 tab1, tab2 = st.tabs(["Busca", "Lista"])
 with tab1:
