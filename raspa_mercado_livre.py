@@ -206,8 +206,8 @@ with tab1:
         with col2:
             st.write(''' ## **Passo a Passo para utilização:** ''')
             st.write(''' ##### **1ºPasso:** Digite a QTD e 3 Palavras chave na Descrição''')          
-            Passo2 = '<p style="font-weight: bolder; color:red; font-size: 16px">Cadastrar na Lista de Compras</p>'
-            Passo3 = '<p style="font-weight: bolder; color:darkgray; font-size: 14px">Pesquisar a Lista de Compras Cadastrada</p>'            
+            Passo2 = '<p style="font-weight: bolder; color:red; font-size: 18px">Cadastrar na Lista de Compras</p>'
+            Passo3 = '<p style="font-weight: bolder; color:darkgray; font-size: 16px">Pesquisar a Lista de Compras Cadastrada</p>'            
             
             st.write(''' ##### **2ºPasso:** Clique no botão''') 
             st.markdown(Passo2, unsafe_allow_html=True)
