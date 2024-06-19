@@ -217,15 +217,17 @@ with tab1:
             st.markdown(mystyle2, unsafe_allow_html=True)      
 
     if submit_button1:
-        ADD_registro(QTD, DESCRICAO)
-        st.write("Dados enviados:")
-        registros = MOSTRAR_registros()
-        if registros:
-            df = pd.DataFrame(registros, columns=['ID', 'QTD', 'DESCRIÇÃO'])
-            st.dataframe(df)
-
+        if len(DESCRICAO.split())<3:
+          st.warning("ERRO! Você precisa inserir ao menos 3 palavras chaves")
         else:
-            st.write('Não há registros no banco de dados.')
+          ADD_registro(QTD, DESCRICAO)
+          st.write("Dados enviados:")
+          registros = MOSTRAR_registros()
+          if registros:
+              df = pd.DataFrame(registros, columns=['ID', 'QTD', 'DESCRIÇÃO'])
+              st.dataframe(df)
+          else:
+              st.write('Não há registros no banco de dados.')
         
     if submit_button2:
         registros = MOSTRAR_registros()
