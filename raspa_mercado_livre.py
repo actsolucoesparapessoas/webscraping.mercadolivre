@@ -281,7 +281,7 @@ with tab2:
     with colunas[0]:
         ColunasInternas = st.columns(3)
         with ColunasInternas[0]:
-            IDpesq = str(st.number_input("ID a pesquisar?", value=1, step=1))
+            IDpesq = str(st.number_input("ID a deletar?", value=1, step=1))
             if st.button("DELETAR"):
                 DEL_registro(IDpesq)
                 registros = MOSTRAR_registros()
