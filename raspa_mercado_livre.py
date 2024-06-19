@@ -187,7 +187,7 @@ with tab1:
         with col1:
             col1_1, col1_2, col1_3 = st.columns(3)
             with col1_1:
-                st.title('')
+                st.write('')
                 QTD = st.text_input("Quantidade")
             with col1_2:
                 st.write("")
