@@ -195,13 +195,11 @@ with tab1:
             DESCRICAO = st.text_input("Descrição:", help="Digite apenas 3 palavras chaves para consulta. Termos maiores, una_as_palavras com _")
                 # Botão de envio do formulário
             st.write('')
-            cols1 = st.columns(3)
+            cols1 = st.columns(2)
             with cols1[0]:
                 submit_button1 = st.form_submit_button(label="Cadastrar na Lista de Compras", type="primary", use_container_width=True)
             with cols1[1]:   
                 submit_button2 = st.form_submit_button(label="Pesquisar a Lista de Compras Cadastrada", type="secondary", use_container_width=True)
-            with cols1[2]:
-                st.write(" ")
 
         with col2:
             st.write(''' ## **Passo a Passo para utilização:** ''')
