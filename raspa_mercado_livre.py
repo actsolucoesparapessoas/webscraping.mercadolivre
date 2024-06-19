@@ -202,7 +202,7 @@ with tab1:
                 submit_button2 = st.form_submit_button(label="Pesquisar a Lista de Compras Cadastrada", type="secondary", use_container_width=True)
 
         with col2:
-            st.write(''' ## **Passo a Passo para utilização:** ''')
+            st.write(''' ## **Dicas de uso:** ''')
             st.write(''' ##### **1ºPasso:** Digite a QTD e 3 Palavras chave na Descrição''')          
             Passo2 = '<p style="font-weight: bolder; color:red; font-size: 18px">Cadastrar na Lista de Compras</p>'
             Passo3 = '<p style="font-weight: bolder; color:darkgray; font-size: 16px">Pesquisar a Lista de Compras Cadastrada</p>'            
