@@ -171,7 +171,7 @@ new=2
 image = Image.open('Logo_Web_Scraping1.png')    
 st.sidebar.image(image, width=300)
 info = 'O web scraping (raspagem na internet), também conhecido como extração de dados da web, é o nome dado ao processo de coleta de dados estruturados da web de maneira automatizada.'
-sidebar_MKD(info, alinhamento = "centralizado", tamanho_fonte = 18, cor_fonte = #4682B4)
+sidebar_MKD(info, alinhamento = "centralizado", tamanho_fonte = 18, cor_fonte = '#4682B4')
 st.sidebar.write('')
 sidebar_MKD('Desenvolvido por: Massaki Igarashi', alinhamento = "centralizado", tamanho_fonte = 18, cor_fonte = "white")
 
