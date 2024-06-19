@@ -170,10 +170,8 @@ new=2
 
 image = Image.open('Logo_Web_Scraping1.png')    
 st.sidebar.image(image, width=300)
-#st.sidebar.write('''O web scraping (raspagem de rede, em tradução livre), também conhecido como extração de dados da web, 
-#                    é o nome dado ao processo de coleta de dados estruturados da web de maneira automatizada.''')
 info = 'O web scraping (raspagem de rede, em tradução livre), também conhecido como extração de dados da web, é o nome dado ao processo de coleta de dados estruturados da web de maneira automatizada.'
-sidebar_MKD(info, alinhamento = "justificado", tamanho_fonte = 12, cor_fonte = "white")
+sidebar_MKD(info, alinhamento = "justificado", tamanho_fonte = 16, cor_fonte = "blue")
 st.title('Web Scraping no Mercado Livre')
 st.subheader('Desenvolvido por: Massaki Igarashi')
 
