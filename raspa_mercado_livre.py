@@ -150,8 +150,8 @@ def sidebar_MKD(texto, alinhamento = "esquerda", tamanho_fonte = 28, cor_fonte =
         
     conteudo = '<p style="font-weight: bolder; color:%s; font-size: %spx;">%s</p>'%(cor_fonte, tamanho_fonte, texto)    
     st.sidebar.markdown(conteudo, unsafe_allow_html=True)
-    mystyle0 = '''<style> p{text-align:%s;}</style>'''%(alinhamento)
-    st.sidebar.markdown(mystyle0, unsafe_allow_html=True)
+    mystyle1 = '''<style> p{text-align:%s;}</style>'''%(alinhamento)
+    st.sidebar.markdown(mystyle1, unsafe_allow_html=True)
   
 st.set_page_config(
      page_title="Scraping Mercado Livre - By: Massaki",
