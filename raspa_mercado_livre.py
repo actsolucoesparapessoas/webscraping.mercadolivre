@@ -206,7 +206,7 @@ with tab1:
         with col2:
             st.write(''' ## **Dicas de uso:** ''')
             st.write(''' ##### **1º)** Digite a QTD e 3 Palavras chave na Descrição''')          
-            Passo2 = '<p style="font-weight: bolder; color:red; font-size: 18px">Cadastrar na Lista de Compras</p>'
+            Passo2 = '<p style="font-weight: bolder; color:#836FFF; font-size: 18px">Cadastrar na Lista de Compras</p>'
             Passo3 = '<p style="font-weight: bolder; color:darkgray; font-size: 16px">Pesquisar a Lista de Compras Cadastrada</p>'            
             
             st.write(''' ##### **2º)** Clique no botão''') 
