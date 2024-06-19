@@ -134,6 +134,25 @@ def MKD(texto, alinhamento = "esquerda", tamanho_fonte = 28, cor_fonte = "black"
     mystyle0 = '''<style> p{text-align:%s;}</style>'''%(alinhamento)
     st.markdown(mystyle0, unsafe_allow_html=True) 
 
+def sidebar_MKD(texto, alinhamento = "esquerda", tamanho_fonte = 28, cor_fonte = "black"):
+    if alinhamento.lower()=="justificado":
+        alinhamento = "justified" 
+    elif alinhamento.lower()=="esquerda":
+        alinhamento = "left"
+    elif alinhamento.lower()=="direita":
+        alinhamento = "right"
+    elif alinhamento.lower()=="centro":
+        alinhamento = "center"
+    elif alinhamento.lower()=="centralizado":
+        alinhamento = "center"        
+    else:
+        alinhamento = "justified"
+        
+    conteudo = '<p style="font-weight: bolder; color:%s; font-size: %spx;">%s</p>'%(cor_fonte, tamanho_fonte, texto)    
+    st.sidebar.markdown(conteudo, unsafe_allow_html=True)
+    mystyle0 = '''<style> p{text-align:%s;}</style>'''%(alinhamento)
+    st.sidebar.markdown(mystyle0, unsafe_allow_html=True)
+  
 st.set_page_config(
      page_title="Scraping Mercado Livre - By: Massaki",
      page_icon="📃",
@@ -151,8 +170,10 @@ new=2
 
 image = Image.open('Logo_Web_Scraping1.png')    
 st.sidebar.image(image, width=300)
-st.sidebar.write('''O web scraping (raspagem de rede, em tradução livre), também conhecido como extração de dados da web, 
-                    é o nome dado ao processo de coleta de dados estruturados da web de maneira automatizada.''')
+#st.sidebar.write('''O web scraping (raspagem de rede, em tradução livre), também conhecido como extração de dados da web, 
+#                    é o nome dado ao processo de coleta de dados estruturados da web de maneira automatizada.''')
+info = 'O web scraping (raspagem de rede, em tradução livre), também conhecido como extração de dados da web, é o nome dado ao processo de coleta de dados estruturados da web de maneira automatizada.'
+sidebar_MKD(info, alinhamento = "justificado", tamanho_fonte = 12, cor_fonte = "white")
 st.title('Web Scraping no Mercado Livre')
 st.subheader('Desenvolvido por: Massaki Igarashi')
 
